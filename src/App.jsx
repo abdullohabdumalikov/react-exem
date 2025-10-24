@@ -4,6 +4,9 @@ import Header from "./assets/components/Header/Header";
 import Main from "./assets/components/Main/Main";
 import Man from "./assets/components/Man/Man";
 function App() {
+import Azamat from "./assets/components/Azamat/Azamat";
+
+function App() {    
   return (
     <>
       <header>
