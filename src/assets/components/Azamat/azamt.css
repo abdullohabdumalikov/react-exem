@@ -1,0 +1,17 @@
+
+
+div img {
+  width: 270px;
+  height: 250px;
+}
+
+div {
+  font-size: 11px;
+}
+
+.az {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
