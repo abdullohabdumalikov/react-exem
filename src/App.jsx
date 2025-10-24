@@ -1,15 +1,22 @@
 import { useState } from "react";
 import "./App.css";
-
+import Header from "./assets/components/Header/Header";
+import Main from "./assets/components/Main/Main";
+import Man from "./assets/components/Man/Man";
 function App() {
   return (
     <>
-      <h1>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-        accusantium, perferendis omnis aliquid iure aspernatur! ipsum dolor sit
-        amet consectetur adipisicing elit. Voluptatem consectetur, voluptate
-        consequatur consequuntur illo nostrum.
-      </h1>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <div className="container">
+          <Main />
+          <div className="cards">
+            <Man />
+          </div>
+        </div>
+      </main>
     </>
   );
 }
