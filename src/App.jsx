@@ -14,8 +14,8 @@ function App() {
       <main>
         <div className="container">
           <Main />
-          <Azamat />
           <div className="cards">
+          <Azamat />
             <Man />
           </div>
         </div>

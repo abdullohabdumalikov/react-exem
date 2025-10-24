@@ -1,6 +1,6 @@
 import React from "react";
 import "../Azamat/azamt.css";
-const tovar = [
+const myShop = [
   {
     id: 9,
     img: "https://www.naturesrecipe.com/wp-content/uploads/2024/04/Natures-Recipe-Chicken-Sweet-Potato-Pumpkin-Grain-Free-Small-Breed-Dry-Dog-Food-12LB-1024x1024.png",
@@ -69,13 +69,24 @@ const tovar = [
 function Azamat() {
   return (
     <div className="az">
-      {tovar.map((tovarlar) => (
-        <div key={tovarlar.id}>
-          <img src={tovarlar.img} alt="" />
-          <h1>{tovarlar.name}</h1>
-          <span style={{ display: "flex"}}>
-            <p>💰{tovarlar.price}</p>
-            <h4>⭐⭐⭐⭐⭐{tovarlar.reting}</h4>
+      {myShop.map((product) => (
+        <div className="ass">
+          <p className="aksiya">
+            {product.aksiya !== false ? product.aksiya : null}
+          </p>
+          <img src={product.img} alt="" />
+          <span className="disc">
+            <button>
+              <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+            </button>
+            <h4>{product.name}</h4>
+            <span className="r">
+              <p className="price">${product.price}</p>
+              <p className="rate">
+                Rating- 
+                ({product.reting !== false ? product.reting : null})
+              </p>
+            </span>
           </span>
         </div>
       ))}

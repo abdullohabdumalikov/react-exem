@@ -9,6 +9,7 @@
   background-color: rgb(103, 99, 99);
   top: 0;
   left: 0;
+  z-index: 80;
 
   .logo {
     width: 118px;
@@ -74,6 +75,13 @@
 
 .i i {
   margin-left: 16px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.i i:hover{
+  transform: scale(1.05);
 }
 
 .hearth b {
@@ -83,10 +91,11 @@
   letter-spacing: 0%;
   text-align: center;
   position: relative;
-  top: -10px;
+  top: -15px;
   background: #db4444;
   border-radius: 50%;
   padding: 1px 2px 1px 5px;
-  left: -12px;
+  left: -15px;
   color: #fafafa;
 }
+

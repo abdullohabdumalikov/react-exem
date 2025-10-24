@@ -68,9 +68,9 @@ function Man() {
     },
   ];
   return (
-    <div className="card">
+    <div className="az">
       {myShop.map((product) => (
-        <div>
+        <div className="ass">
           <p className="aksiya">
             {product.aksiya !== false ? product.aksiya : null}
           </p>
@@ -80,10 +80,12 @@ function Man() {
               <i class="fa-solid fa-cart-shopping"></i> Add To Cart
             </button>
             <h4>{product.name}</h4>
-            <p>${product.price}</p>
-            <p className="aksiya">
-              {product.reting !== false ? product.reting : null}
-            </p>
+            <div className="r">
+              <p className="price">${product.price}</p>
+              <p className="rate">
+                Rating- ({product.reting !== false ? product.reting : null})
+              </p>
+            </div>
           </span>
         </div>
       ))}

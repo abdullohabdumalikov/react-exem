@@ -16,3 +16,76 @@
   display: flex;
   flex-direction: column;
 }
+
+.az {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.az button {
+  background: #000000;
+  color: #ffffff;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: cell;
+}
+
+.ass {
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  border-radius: 25px;
+}
+
+.ass:hover {
+  transform: translateY(-10px) scale(1.02); /* Moves up and slightly scales on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.aksiya {
+  background-color: #db4444;
+  border-radius: 4px;
+  font-weight: 400;
+  width: 35px;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: #fafafa;
+  padding: 0 0 0 9.5px;
+}
+
+h4 {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin-top: 10px;
+}
+
+.price {
+  color: #db4444;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.rate {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0%;
+}
+
+.r {
+    display: flex;
+  justify-content: space-between;
+}
