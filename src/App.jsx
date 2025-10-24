@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Azamat from "./assets/components/Azamat/Azamat";
 
-function App() {
+function App() {    
   return (
     <>
       <div className="container">
